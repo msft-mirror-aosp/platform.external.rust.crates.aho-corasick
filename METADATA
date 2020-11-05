@@ -7,13 +7,13 @@ third_party {
   }
   url {
     type: ARCHIVE
-    value: "https://static.crates.io/crates/aho-corasick/aho-corasick-0.7.14.crate"
+    value: "https://static.crates.io/crates/aho-corasick/aho-corasick-0.7.15.crate"
   }
-  version: "0.7.14"
+  version: "0.7.15"
   license_type: NOTICE
   last_upgrade_date {
     year: 2020
-    month: 10
-    day: 26
+    month: 11
+    day: 4
   }
 }
