@@ -1,5 +1,5 @@
 name: "aho-corasick"
-description: "A library for finding occurrences of many patterns at once with SIMD acceleration in some cases. This library provides multiple pattern search principally through an implementation of the Aho-Corasick algorithm, which builds a finite state machine for executing searches in linear time. Features include case insensitive matching, overlapping matches and search & replace in streams."
+description: "Fast multiple substring searching."
 third_party {
   url {
     type: HOMEPAGE
@@ -7,13 +7,13 @@ third_party {
   }
   url {
     type: ARCHIVE
-    value: "https://static.crates.io/crates/aho-corasick/aho-corasick-0.7.13.crate"
+    value: "https://static.crates.io/crates/aho-corasick/aho-corasick-0.7.15.crate"
   }
-  version: "0.7.13"
+  version: "0.7.15"
   license_type: NOTICE
   last_upgrade_date {
     year: 2020
-    month: 7
-    day: 10
+    month: 11
+    day: 4
   }
 }
