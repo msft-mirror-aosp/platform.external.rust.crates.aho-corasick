@@ -16,4 +16,4 @@ rust_library {
 }
 
 // dependent_library ["feature_list"]
-//   memchr-2.3.3 "std,use_std"
+//   memchr-2.3.4 "std,use_std"
