@@ -38,10 +38,43 @@ license {
     ],
 }
 
+rust_defaults {
+    name: "aho-corasick_test_defaults",
+    crate_name: "aho_corasick",
+    srcs: ["src/lib.rs"],
+    cargo_env_compat: true,
+    cargo_pkg_version: "0.7.18",
+    test_suites: ["general-tests"],
+    auto_gen_config: true,
+    edition: "2018",
+    features: [
+        "default",
+        "std",
+    ],
+    rustlibs: [
+        "libmemchr",
+    ],
+}
+
+rust_test_host {
+    name: "aho-corasick_host_test_src_lib",
+    defaults: ["aho-corasick_test_defaults"],
+    test_options: {
+        unit_test: true,
+    },
+}
+
+rust_test {
+    name: "aho-corasick_device_test_src_lib",
+    defaults: ["aho-corasick_test_defaults"],
+}
+
 rust_library {
     name: "libaho_corasick",
     host_supported: true,
     crate_name: "aho_corasick",
+    cargo_env_compat: true,
+    cargo_pkg_version: "0.7.18",
     srcs: ["src/lib.rs"],
     edition: "2018",
     features: [
@@ -56,6 +89,3 @@ rust_library {
         "com.android.virt",
     ],
 }
-
-// dependent_library ["feature_list"]
-//   memchr-2.4.0 "std"
