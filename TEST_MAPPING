@@ -2,6 +2,9 @@
 {
   "presubmit": [
     {
+      "name": "aho-corasick_device_test_src_lib"
+    },
+    {
       "name": "base64_device_test_tests_decode"
     },
     {
