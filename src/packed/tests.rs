@@ -1,8 +1,8 @@
 use std::collections::HashMap;
 use std::usize;
 
-use crate::packed::{Config, MatchKind};
-use crate::Match;
+use packed::{Config, MatchKind};
+use Match;
 
 /// A description of a single test against a multi-pattern searcher.
 ///
