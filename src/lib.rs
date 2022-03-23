@@ -186,6 +186,7 @@ disabled via
 #[cfg(not(feature = "std"))]
 compile_error!("`std` feature is currently required to build this crate");
 
+extern crate memchr;
 // #[cfg(doctest)]
 // #[macro_use]
 // extern crate doc_comment;
@@ -193,12 +194,12 @@ compile_error!("`std` feature is currently required to build this crate");
 // #[cfg(doctest)]
 // doctest!("../README.md");
 
-pub use crate::ahocorasick::{
+pub use ahocorasick::{
     AhoCorasick, AhoCorasickBuilder, FindIter, FindOverlappingIter, MatchKind,
     StreamFindIter,
 };
-pub use crate::error::{Error, ErrorKind};
-pub use crate::state_id::StateID;
+pub use error::{Error, ErrorKind};
+pub use state_id::StateID;
 
 mod ahocorasick;
 mod automaton;
