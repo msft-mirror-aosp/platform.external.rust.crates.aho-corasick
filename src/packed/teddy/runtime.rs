@@ -51,10 +51,10 @@
 use std::arch::x86_64::*;
 use std::mem;
 
-use crate::packed::pattern::{PatternID, Patterns};
-use crate::packed::teddy::compile;
-use crate::packed::vector::*;
-use crate::Match;
+use packed::pattern::{PatternID, Patterns};
+use packed::teddy::compile;
+use packed::vector::*;
+use Match;
 
 /// The Teddy runtime.
 ///
