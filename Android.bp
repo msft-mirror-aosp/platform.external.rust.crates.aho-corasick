@@ -40,6 +40,7 @@ license {
 
 rust_test {
     name: "aho-corasick_test_src_lib",
+    // has rustc warnings
     host_supported: true,
     crate_name: "aho_corasick",
     cargo_env_compat: true,
@@ -62,6 +63,7 @@ rust_test {
 
 rust_library {
     name: "libaho_corasick",
+    // has rustc warnings
     host_supported: true,
     crate_name: "aho_corasick",
     cargo_env_compat: true,
@@ -80,4 +82,5 @@ rust_library {
         "com.android.compos",
         "com.android.virt",
     ],
+    vendor_available: true,
 }
