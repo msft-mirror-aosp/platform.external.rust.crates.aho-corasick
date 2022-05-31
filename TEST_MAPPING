@@ -23,9 +23,29 @@
       "path": "external/rust/crates/unicode-xid"
     }
   ],
+  "postsubmit": [
+    {
+      "name": "aho-corasick_test_src_lib"
+    },
+    {
+      "name": "keystore2_legacy_blobs_test"
+    },
+    {
+      "name": "keystore2_test"
+    },
+    {
+      "name": "legacykeystore_test"
+    },
+    {
+      "name": "virtualizationservice_device_test"
+    }
+  ],
   "presubmit": [
     {
       "name": "aho-corasick_test_src_lib"
+    },
+    {
+      "name": "keystore2_legacy_blobs_test"
     },
     {
       "name": "keystore2_test"
@@ -40,6 +60,9 @@
   "presubmit-rust": [
     {
       "name": "aho-corasick_test_src_lib"
+    },
+    {
+      "name": "keystore2_legacy_blobs_test"
     },
     {
       "name": "keystore2_test"
