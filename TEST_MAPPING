@@ -24,46 +24,28 @@
     },
     {
       "path": "external/rust/crates/unicode-xid"
+    },
+    {
+      "path": "packages/modules/Virtualization/virtualizationmanager"
+    },
+    {
+      "path": "system/keymint/hal"
+    },
+    {
+      "path": "system/security/keystore2"
+    },
+    {
+      "path": "system/security/keystore2/legacykeystore"
     }
   ],
   "presubmit": [
     {
       "name": "aho-corasick_test_src_lib"
-    },
-    {
-      "name": "keystore2_legacy_blobs_test"
-    },
-    {
-      "name": "keystore2_test"
-    },
-    {
-      "name": "legacykeystore_test"
-    },
-    {
-      "name": "libkmr_hal_test"
-    },
-    {
-      "name": "virtualizationmanager_device_test"
     }
   ],
   "presubmit-rust": [
     {
       "name": "aho-corasick_test_src_lib"
-    },
-    {
-      "name": "keystore2_legacy_blobs_test"
-    },
-    {
-      "name": "keystore2_test"
-    },
-    {
-      "name": "legacykeystore_test"
-    },
-    {
-      "name": "libkmr_hal_test"
-    },
-    {
-      "name": "virtualizationmanager_device_test"
     }
   ]
 }
